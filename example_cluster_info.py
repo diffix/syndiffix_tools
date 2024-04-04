@@ -3,7 +3,7 @@ import pprint
 from syndiffix.synthesizer import Synthesizer
 
 from common_tasks import *
-from extractors.cluster_info import *
+from cluster_info import *
 from tests.helpers import *
 
 """

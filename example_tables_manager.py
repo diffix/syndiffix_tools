@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 from common_tasks import *
-from tables_manager.tables_manager import TablesManager
+from tables_manager import TablesManager
 from tests.helpers import *
 
 """
@@ -12,7 +12,7 @@ synthetic data files
 
 # Make a dataframe
 df = get_generic_dataframe()
-test_path = Path("tests/tables_manager/test_dir")
+test_path = Path("tests/test_dir")
 
 # Make the directory where the tables and other metadat will be stored
 os.makedirs(test_path, exist_ok=True)
@@ -28,7 +28,7 @@ tm = TablesManager(dir_path=test_path)
 tm.put_df_orig(df, "test_file", also_make_csv=True)
 
 # At this point, the metadata file at
-# "tests/tables_manager/test_dir/orig_meta_data.json" can be edited as needed
+# "tests/test_dir/orig_meta_data.json" can be edited as needed
 # However, if there is a pid column, then it must be set before synthesizing
 # (either with set_pid_cols or through direct editing of the metadata file)
 tm.set_pid_cols(["pid"])

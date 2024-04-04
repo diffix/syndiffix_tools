@@ -3,7 +3,7 @@ import pprint
 from syndiffix.synthesizer import Synthesizer
 
 from common_tasks import *
-from extractors.tree_walker import *
+from tree_walker import *
 from tests.helpers import *
 
 """
