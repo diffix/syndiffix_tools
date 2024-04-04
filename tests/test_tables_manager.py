@@ -3,14 +3,14 @@ import os
 from pathlib import Path
 
 from common_tasks import *
-from tables_manager.tables_manager import TablesManager
+from tables_manager import TablesManager
 
-from ..helpers import *
+from .helpers import *
 
 
 def test_input_new_df_orig():
     df = get_generic_dataframe()
-    test_path = Path("tests/tables_manager/test_dir")
+    test_path = Path("tests/test_dir")
     os.makedirs(test_path, exist_ok=True)
     # remove all files from the directory test_path
     for file in os.listdir(test_path):
@@ -26,7 +26,7 @@ def test_input_new_df_orig():
 
 def test_input_existing_df_orig():
     # must run after test_input_new_df_orig
-    test_path = Path("tests/tables_manager/test_dir")
+    test_path = Path("tests/test_dir")
     assert Path(test_path, "orig_meta_data.json").exists()
     assert Path(test_path, "test_file.parquet").exists()
     assert Path(test_path, "test_file.csv").exists()
@@ -42,7 +42,7 @@ def test_input_existing_df_orig():
 
 def test_set_pid_cols():
     # must run after test_input_new_df_orig
-    test_path = Path("tests/tables_manager/test_dir")
+    test_path = Path("tests/test_dir")
     tm = TablesManager(dir_path=test_path)
     tm.set_pid_cols(["pid", "str5"])
     assert tm.orig_meta_data["pid_cols"] == ["pid", "str5"]

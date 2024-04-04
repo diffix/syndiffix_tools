@@ -8,8 +8,8 @@ import pandas as pd
 from syndiffix.synthesizer import Synthesizer
 
 from common_tasks import *
-from extractors.cluster_info import *
-from extractors.tree_walker import *
+from cluster_info import *
+from tree_walker import *
 
 
 class TablesManager:
@@ -50,10 +50,10 @@ class TablesManager:
             raise ValueError("df_orig is already populated.")
         if len(self.orig_meta_data) > 0:
             raise ValueError("orig_meta_data is already populated.")
-        self.orig_file_name = orig_file_name
+        self.orig_file_name = orig_file_name + ".parquet"
         self.orig_meta_data = {
             "pid_cols": [],
-            "orig_file_name": self.orig_file_name + ".parquet",
+            "orig_file_name": self.orig_file_name,
             "columns": list(df_orig.columns),
             "column_dtypes": {col: str(df_orig[col].dtype) for col in df_orig.columns},
             "column_classes": best_guess_column_classification(df_orig),
