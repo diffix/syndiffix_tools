@@ -9,7 +9,7 @@ setup(
     long_description_content_type='text/markdown',
     author="Open Diffix",
     author_email="hello@open-diffix.org",
-    url="https://github.com/diffix/syndiffix-tools",
+    url="https://github.com/diffix/syndiffix_tools",
     install_requires=['syndiffix'],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
