@@ -1,4 +1,4 @@
-# syndiffix-tools
+# syndiffix_tools
 
 A set of useful tools for working with SynDiffix.
 
