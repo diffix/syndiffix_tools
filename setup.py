@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="syndiffix-tools",
+    name="syndiffix_tools",
     version="0.0.1",
     packages=find_packages(),
     description="A variety of tools for managing SynDiffix synthetic data.",
