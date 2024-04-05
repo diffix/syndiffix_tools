@@ -121,7 +121,7 @@ class TablesManager:
 
     def syn_file_exists(self, columns: list, do_load: bool = False) -> bool:
         data_file_name = make_data_file_name(self.orig_file_name, columns)
-        if do_load:
+        if do_load or self.tables_catalog is None:
             self._load_tables_catalog()
         return data_file_name in self.tables_catalog
 
