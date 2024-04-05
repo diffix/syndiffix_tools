@@ -7,8 +7,8 @@ import filelock
 import pandas as pd
 from syndiffix.synthesizer import Synthesizer
 
-from syndiffix_tools.common_tasks import *
 from syndiffix_tools.cluster_info import *
+from syndiffix_tools.common_tasks import *
 from syndiffix_tools.tree_walker import *
 
 
@@ -34,6 +34,7 @@ class TablesManager:
         if not self.dir_path.exists():
             raise FileNotFoundError(f"Directory {self.dir_path} does not exist.")
         self.tables_catalog_path = Path(self.dir_path, "tables_catalog.json")
+        self.tables_catalog = None
         lock_path = Path(self.dir_path, "write.lock")
         self.lock = filelock.FileLock(lock_path)
         self.meta_data_path = Path(self.dir_path, "orig_meta_data.json")
@@ -42,6 +43,9 @@ class TablesManager:
                 self.orig_meta_data = json.load(file)
             self.orig_file_name = self.orig_meta_data["orig_file_name"]
             self.df_orig = get_df_from_pq(Path(self.dir_path, self.orig_file_name))
+
+    def get_dir_path_str(self) -> str:
+        return self.dir_path.as_posix()
 
     def put_df_orig(
         self, df_orig: pd.DataFrame, orig_file_name: str, also_make_csv: bool = False
@@ -82,20 +86,19 @@ class TablesManager:
             with self.meta_data_path.open("w") as file:
                 json.dump(self.orig_meta_data, file, indent=4)
 
-    def _read_tables_catalog(self) -> dict:
+    def _load_tables_catalog(self) -> None:
         if self.tables_catalog_path.exists():
             with self.tables_catalog_path.open("r") as file:
-                tables_catalog = json.load(file)
-            return tables_catalog
+                self.tables_catalog = json.load(file)
         else:
-            return {}
+            self.tables_catalog = {}
 
     def _save_tables_catalog(self, tab_key, tab_value) -> None:
         with self.lock:
-            tables_catalog = self._read_tables_catalog()
-            tables_catalog[tab_key] = tab_value
+            self._load_tables_catalog()
+            self.tables_catalog[tab_key] = tab_value
             with self.tables_catalog_path.open("w") as file:
-                json.dump(tables_catalog, file, indent=4)
+                json.dump(self.tables_catalog, file, indent=4)
 
     def save_sdx_stats(
         self,
@@ -116,6 +119,12 @@ class TablesManager:
         with stats_file_path.open("w") as file:
             json.dump(saver, file, indent=4)
 
+    def syn_file_exists(self, columns: list, do_load: bool = False) -> bool:
+        data_file_name = make_data_file_name(self.orig_file_name, columns)
+        if do_load:
+            self._load_tables_catalog()
+        return data_file_name in self.tables_catalog
+
     def synthesize(
         self, columns: list = None, also_save_stats: bool = False, force: bool = False
     ) -> None:
@@ -125,7 +134,7 @@ class TablesManager:
         columns = [col for col in columns if col not in self.orig_meta_data["pid_cols"]]
         columns.sort()
         data_file_name = make_data_file_name(self.orig_file_name, columns)
-        tables_catalog = self._read_tables_catalog()
+        tables_catalog = self._load_tables_catalog()
         if data_file_name in tables_catalog:
             if not force:
                 # already have it, so nothing to do

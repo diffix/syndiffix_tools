@@ -3,8 +3,8 @@ import pprint
 from syndiffix.synthesizer import Synthesizer
 
 from common_tasks import *
-from tree_walker import *
 from tests.helpers import *
+from tree_walker import *
 
 """
 Demonstrates usage of TreeWalker to obtain information about a synthetic

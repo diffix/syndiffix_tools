@@ -2,8 +2,8 @@ import pprint
 
 from syndiffix.synthesizer import Synthesizer
 
-from common_tasks import *
 from cluster_info import *
+from common_tasks import *
 from tests.helpers import *
 
 """
