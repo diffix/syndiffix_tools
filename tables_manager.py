@@ -7,9 +7,9 @@ import filelock
 import pandas as pd
 from syndiffix.synthesizer import Synthesizer
 
-from common_tasks import *
-from cluster_info import *
-from tree_walker import *
+from syndiffix_tools.common_tasks import *
+from syndiffix_tools.cluster_info import *
+from syndiffix_tools.tree_walker import *
 
 
 class TablesManager:
