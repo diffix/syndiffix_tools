@@ -134,7 +134,7 @@ class TablesManager:
         columns = [col for col in columns if col not in self.orig_meta_data["pid_cols"]]
         columns.sort()
         data_file_name = make_data_file_name(self.orig_file_name, columns)
-         self._load_tables_catalog()
+        self._load_tables_catalog()
         if data_file_name in self.tables_catalog:
             if not force:
                 # already have it, so nothing to do
