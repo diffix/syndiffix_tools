@@ -51,8 +51,13 @@ class TablesManager:
         if len(self.orig_meta_data) > 0:
             raise ValueError("orig_meta_data is already populated.")
         self.orig_file_name = orig_file_name + ".parquet"
+        # record the number of distinct values per column
+
         self.orig_meta_data = {
             "pid_cols": [],
+            "num_rows": df_orig.shape[0],
+            "num_cols": df_orig.shape[1],
+            "num_distinct_per_column": df_orig.nunique().to_dict(),
             "orig_file_name": self.orig_file_name,
             "columns": list(df_orig.columns),
             "column_dtypes": {col: str(df_orig[col].dtype) for col in df_orig.columns},
