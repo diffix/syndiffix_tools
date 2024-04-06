@@ -10,7 +10,7 @@ setup(
     author="Open Diffix",
     author_email="hello@open-diffix.org",
     url="https://github.com/diffix/syndiffix_tools",
-    install_requires=["syndiffix", "filelock", "pyarrow"],
+    install_requires=["syndiffix", "pyarrow"],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "License :: OSI Approved :: MIT License",

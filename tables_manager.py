@@ -1,4 +1,5 @@
 import json
+import os
 import time
 from pathlib import Path
 from typing import Union
@@ -127,6 +128,11 @@ class TablesManager:
         elapsed_time = time.time() - start_time
         put_pq_from_df(data_file_path, df_syn)
         if also_save_stats:
-            stats_file_path = Path(self.dir_path, "stats_" + data_file_name + ".json")
+            stats_dir_path = Path(
+                self.dir_path,
+                "stats",
+            )
+            os.makedirs(stats_dir_path, exist_ok=True)
+            stats_file_path = Path(stats_dir_path, "stats_" + data_file_name + ".json")
             self.save_sdx_stats(syn, stats_file_path, columns, elapsed_time)
             pass
