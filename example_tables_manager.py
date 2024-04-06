@@ -33,10 +33,7 @@ tm.put_df_orig(df, "test_file", also_make_csv=True)
 # (either with set_pid_cols or through direct editing of the metadata file)
 tm.set_pid_cols(["pid"])
 
-# Make a synthetic table with the following two columns. The synthetic table is
-# placed in the directory, and its metadata is stored in "tables_catalog.json".
-# Note that tables_catalog.json is protected by a lock, so multiple processes can
-# write to it.
+# Make a synthetic table with the following two columns.
 # Various statistics about the synthesis internals are also saved in a separate file.
 tm.synthesize(columns=["datetime", "str5"], also_save_stats=True)
 

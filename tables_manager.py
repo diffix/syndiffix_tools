@@ -1,9 +1,9 @@
 import json
+import os
 import time
 from pathlib import Path
 from typing import Union
 
-import filelock
 import pandas as pd
 from syndiffix.synthesizer import Synthesizer
 
@@ -33,10 +33,6 @@ class TablesManager:
             self.dir_path = dir_path
         if not self.dir_path.exists():
             raise FileNotFoundError(f"Directory {self.dir_path} does not exist.")
-        self.tables_catalog_path = Path(self.dir_path, "tables_catalog.json")
-        self.tables_catalog = None
-        lock_path = Path(self.dir_path, "write.lock")
-        self.lock = filelock.FileLock(lock_path)
         self.meta_data_path = Path(self.dir_path, "orig_meta_data.json")
         if self.meta_data_path.exists():
             with self.meta_data_path.open("r") as file:
@@ -82,23 +78,8 @@ class TablesManager:
         self._save_meta_data()
 
     def _save_meta_data(self) -> None:
-        with self.lock:
-            with self.meta_data_path.open("w") as file:
-                json.dump(self.orig_meta_data, file, indent=4)
-
-    def _load_tables_catalog(self) -> None:
-        if self.tables_catalog_path.exists():
-            with self.tables_catalog_path.open("r") as file:
-                self.tables_catalog = json.load(file)
-        else:
-            self.tables_catalog = {}
-
-    def _save_tables_catalog(self, tab_key, tab_value) -> None:
-        with self.lock:
-            self._load_tables_catalog()
-            self.tables_catalog[tab_key] = tab_value
-            with self.tables_catalog_path.open("w") as file:
-                json.dump(self.tables_catalog, file, indent=4)
+        with self.meta_data_path.open("w") as file:
+            json.dump(self.orig_meta_data, file, indent=4)
 
     def save_sdx_stats(
         self,
@@ -121,9 +102,8 @@ class TablesManager:
 
     def syn_file_exists(self, columns: list, do_load: bool = False) -> bool:
         data_file_name = make_data_file_name(self.orig_file_name, columns)
-        if do_load or self.tables_catalog is None:
-            self._load_tables_catalog()
-        return data_file_name in self.tables_catalog
+        file_path = Path(self.dir_path, data_file_name + ".parquet")
+        return file_path.exists()
 
     def synthesize(
         self, columns: list = None, also_save_stats: bool = False, force: bool = False
@@ -134,11 +114,9 @@ class TablesManager:
         columns = [col for col in columns if col not in self.orig_meta_data["pid_cols"]]
         columns.sort()
         data_file_name = make_data_file_name(self.orig_file_name, columns)
-        self._load_tables_catalog()
-        if data_file_name in self.tables_catalog:
-            if not force:
-                # already have it, so nothing to do
-                return
+        data_file_path = Path(self.dir_path, data_file_name + ".parquet")
+        if data_file_path.exists() and not force:
+            return
         if len(self.orig_meta_data["pid_cols"]) > 0:
             df_pid = self.df_orig[self.orig_meta_data["pid_cols"]]
         else:
@@ -148,17 +126,13 @@ class TablesManager:
         syn = Synthesizer(self.df_orig[columns], pids=df_pid)
         df_syn = syn.sample()
         elapsed_time = time.time() - start_time
-        data_file_path = Path(self.dir_path, data_file_name + ".parquet")
         put_pq_from_df(data_file_path, df_syn)
-        catalog_save = {
-            "data_file_path": data_file_path.as_posix(),
-            "columns": columns,
-            "elapsed_time": elapsed_time,
-        }
         if also_save_stats:
-            stats_file_path = Path(self.dir_path, "stats_" + data_file_name + ".json")
-            catalog_save["stats_file_path"] = stats_file_path.as_posix()
+            stats_dir_path = Path(
+                self.dir_path,
+                "stats",
+            )
+            os.makedirs(stats_dir_path, exist_ok=True)
+            stats_file_path = Path(stats_dir_path, "stats_" + data_file_name + ".json")
             self.save_sdx_stats(syn, stats_file_path, columns, elapsed_time)
             pass
-        # This blocks on a file lock
-        self._save_tables_catalog(data_file_name, catalog_save)
