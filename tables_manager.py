@@ -81,6 +81,9 @@ class TablesManager:
         self.orig_meta_data["pid_cols"] = pid_cols
         self._save_meta_data()
 
+    def get_pid_cols(self) -> list:
+        return self.orig_meta_data["pid_cols"]
+
     def _save_meta_data(self) -> None:
         with self.meta_data_path.open("w") as file:
             json.dump(self.orig_meta_data, file, indent=4)
