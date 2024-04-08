@@ -109,7 +109,7 @@ class TablesManager:
 
     def syn_file_exists(self, columns: list, do_load: bool = False) -> bool:
         data_file_name = make_data_file_name(self.orig_file_name, columns)
-        file_path = Path(self.dir_path, data_file_name + ".parquet")
+        file_path = Path(self.syn_dir_path, data_file_name + ".parquet")
         return file_path.exists()
 
     def synthesize(
@@ -135,11 +135,6 @@ class TablesManager:
         elapsed_time = time.time() - start_time
         put_pq_from_df(data_file_path, df_syn)
         if also_save_stats:
-            stats_dir_path = Path(
-                self.dir_path,
-                "stats",
-            )
-            os.makedirs(stats_dir_path, exist_ok=True)
-            stats_file_path = Path(stats_dir_path, "stats_" + data_file_name + ".json")
+            stats_file_path = Path(self.stats_dir_path, "stats_" + data_file_name + ".json")
             self.save_sdx_stats(syn, stats_file_path, columns, elapsed_time)
             pass
