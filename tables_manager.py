@@ -33,6 +33,10 @@ class TablesManager:
             self.dir_path = dir_path
         if not self.dir_path.exists():
             raise FileNotFoundError(f"Directory {self.dir_path} does not exist.")
+        self.stats_dir_path = Path(self.dir_path, "stats")
+        self.stats_dir_path.mkdir(exist_ok=True)
+        self.syn_dir_path = Path(self.dir_path, "syn")
+        self.syn_dir_path.mkdir(exist_ok=True)
         self.meta_data_path = Path(self.dir_path, "orig_meta_data.json")
         if self.meta_data_path.exists():
             with self.meta_data_path.open("r") as file:
@@ -114,7 +118,7 @@ class TablesManager:
         columns = [col for col in columns if col not in self.orig_meta_data["pid_cols"]]
         columns.sort()
         data_file_name = make_data_file_name(self.orig_file_name, columns)
-        data_file_path = Path(self.dir_path, data_file_name + ".parquet")
+        data_file_path = Path(self.syn_dir_path, data_file_name + ".parquet")
         if data_file_path.exists() and not force:
             return
         if len(self.orig_meta_data["pid_cols"]) > 0:
