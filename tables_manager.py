@@ -130,6 +130,10 @@ class TablesManager:
             df_pid = None
         # record start of elapsed time
         start_time = time.time()
+        print("df_orig")
+        print(self.df_orig.head())
+        print("df_pid")
+        print(self.df_pid.head())
         syn = Synthesizer(self.df_orig[columns], pids=df_pid)
         df_syn = syn.sample()
         elapsed_time = time.time() - start_time
