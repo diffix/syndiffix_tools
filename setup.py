@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 setup(
     name="syndiffix_tools",
     version="0.0.2",
-    packages=find_packages(),
+    packages=find_packages(exclude=["tests"]),
     description="A variety of tools for managing SynDiffix synthetic data.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
