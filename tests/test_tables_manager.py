@@ -5,7 +5,7 @@ from pathlib import Path
 from common_tasks import *
 from tables_manager import TablesManager
 
-from .helpers import *
+from helpers import *
 
 
 def test_input_new_df_orig():

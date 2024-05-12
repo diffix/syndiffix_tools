@@ -2,7 +2,7 @@ import json
 import os
 import time
 from pathlib import Path
-from typing import Union
+from typing import Union, Optional
 
 import pandas as pd
 from syndiffix.synthesizer import Synthesizer
@@ -43,6 +43,7 @@ class TablesManager:
                 self.orig_meta_data = json.load(file)
             self.orig_file_name = self.orig_meta_data["orig_file_name"]
             self.df_orig = get_df_from_pq(Path(self.dir_path, self.orig_file_name))
+        self.catalog = None
 
     def get_dir_path_str(self) -> str:
         return self.dir_path.as_posix()
@@ -88,6 +89,37 @@ class TablesManager:
         with self.meta_data_path.open("w") as file:
             json.dump(self.orig_meta_data, file, indent=4)
 
+    def build_catalog(self, cache: bool = False) -> None:
+        self.catalog = []
+        for file_path in self.syn_dir_path.iterdir():
+            if file_path.suffix == ".parquet":
+                df = get_df_from_pq(file_path)
+                columns = list(df.columns)
+                cat_entry = {"file_path": file_path, "columns": columns}
+                if cache:
+                    cat_entry["df"] = df
+                else:
+                    cat_entry["df"] = None
+                self.catalog.append(cat_entry)
+
+
+    def get_best_syn_df(self, columns: list = None, cache: bool = False) -> Optional[pd.DataFrame]:
+        if columns is None:
+            columns = list(self.df_orig.columns)
+        if self.catalog is None:
+            self.build_catalog(cache=cache)
+        best_match_columns = None
+        for entry in self.catalog:
+            entry_columns = entry["columns"]
+            if all(col in entry_columns for col in columns):
+                if best_match_columns is None or len(entry_columns) < len(best_match_columns):
+                    best_match_columns = entry_columns
+        if best_match_columns is not None:
+            best_match_df = self.get_syn_df(best_match_columns)
+            return best_match_df
+        else:
+            return None
+
     def save_sdx_stats(
         self,
         syn: Synthesizer,
@@ -112,6 +144,16 @@ class TablesManager:
         file_path = Path(self.syn_dir_path, data_file_name + ".parquet")
         return file_path.exists()
 
+    def get_syn_df(self, columns: list = None) -> Optional[pd.DataFrame]:
+        if columns is None:
+            columns = list(self.df_orig.columns)
+        data_file_name = make_data_file_name(self.orig_file_name, columns)
+        file_path = Path(self.syn_dir_path, data_file_name + ".parquet")
+        if file_path.exists():
+            return pd.read_parquet(file_path)
+        else:
+            return None
+
     def synthesize(
         self, columns: list = None, also_save_stats: bool = False, force: bool = False
     ) -> None:
@@ -134,6 +176,9 @@ class TablesManager:
         df_syn = syn.sample()
         elapsed_time = time.time() - start_time
         put_pq_from_df(data_file_path, df_syn)
+        # The catalog would be out of date after this, so we just delete it
+        # and rebuild it when needed
+        self.catalog = None
         if also_save_stats:
             stats_file_path = Path(self.stats_dir_path, "stats_" + data_file_name + ".json")
             self.save_sdx_stats(syn, stats_file_path, columns, elapsed_time)

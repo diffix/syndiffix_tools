@@ -4,6 +4,58 @@ import string
 from syndiffix import Synthesizer
 from syndiffix.tree import Branch, Leaf, Node
 
+def get_forest_stats(forest):
+    '''
+    `forest` is the output of `TreeWalker.get_forest_nodes()`
+    '''
+    stats = {
+        'overall': {
+            'num_trees': 0,
+            'num_nodes': 0,
+            'num_leaf': 0,
+            'num_branch': 0,
+            'leaf_singularity': 0,
+            'branch_singularity': 0,
+            'leaf_over_threshold': 0,
+            'branch_over_threshold': 0,
+        },
+        'per_tree': {
+        },
+    }
+    overall = stats['overall']
+    for node in forest.values():
+        comb = tuple(node['columns'])
+        if comb not in stats['per_tree']:
+            stats['per_tree'][comb] = {
+                'num_nodes': 0,
+                'num_leaf': 0,
+                'num_branch': 0,
+                'leaf_singularity': 0,
+                'branch_singularity': 0,
+                'leaf_over_threshold': 0,
+                'branch_over_threshold': 0,
+            }
+        tree = stats['per_tree'][comb]
+        overall['num_nodes'] += 1
+        if node['node_type'] == 'leaf':
+            overall['num_leaf'] += 1
+            tree['num_leaf'] += 1
+            if node['singularity']:
+                overall['leaf_singularity'] += 1
+                tree['leaf_singularity'] += 1
+            if node['over_threshold']:
+                overall['leaf_over_threshold'] += 1
+                tree['leaf_over_threshold'] += 1
+        elif node['node_type'] == 'branch':
+            overall['num_branch'] += 1
+            tree['num_branch'] += 1
+            if node['singularity']:
+                overall['branch_singularity'] += 1
+                tree['branch_singularity'] += 1
+            if node['over_threshold']:
+                overall['branch_over_threshold'] += 1
+                tree['branch_over_threshold'] += 1
+    return stats
 
 class TreeWalker:
     def __init__(self, sdx: Synthesizer):
