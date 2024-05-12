@@ -1,0 +1,6839 @@
+{
+    "columns": [
+        "datetime",
+        "float"
+    ],
+    "elapsed_time": 0.11805462837219238,
+    "orig_file_name": "test_file.parquet",
+    "forest_nodes": {
+        "nid:oid22d": {
+            "node_id": "nid:oid22d",
+            "par_id": "nid:000000",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6942499200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    4294967296.0,
+                    8589934592.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 98,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:ezsn9i",
+                "nid:qgomrd"
+            ]
+        },
+        "nid:ezsn9i": {
+            "node_id": "nid:ezsn9i",
+            "par_id": "nid:oid22d",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6438852654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    4294967296.0,
+                    6442450944.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 21,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:567j22"
+            ]
+        },
+        "nid:567j22": {
+            "node_id": "nid:567j22",
+            "par_id": "nid:ezsn9i",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6438852654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    5368709120.0,
+                    6442450944.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 21,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:l34033"
+            ]
+        },
+        "nid:l34033": {
+            "node_id": "nid:l34033",
+            "par_id": "nid:567j22",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6438852654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    5905580032.0,
+                    6442450944.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 21,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:9ybgeb"
+            ]
+        },
+        "nid:9ybgeb": {
+            "node_id": "nid:9ybgeb",
+            "par_id": "nid:l34033",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6438852654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6174015488.0,
+                    6442450944.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 21,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:6th9b3"
+            ]
+        },
+        "nid:6th9b3": {
+            "node_id": "nid:6th9b3",
+            "par_id": "nid:9ybgeb",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6438852654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6308233216.0,
+                    6442450944.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 20,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:f80myn",
+                "nid:2kgbzv"
+            ]
+        },
+        "nid:f80myn": {
+            "node_id": "nid:f80myn",
+            "par_id": "nid:6th9b3",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6375099927.272728
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6308233216.0,
+                    6375342080.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 10,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:tikbqo",
+                "nid:fvjw5d"
+            ]
+        },
+        "nid:tikbqo": {
+            "node_id": "nid:tikbqo",
+            "par_id": "nid:f80myn",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6336848290.909091
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6308233216.0,
+                    6341787648.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 5
+        },
+        "nid:fvjw5d": {
+            "node_id": "nid:fvjw5d",
+            "par_id": "nid:f80myn",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6343223563.636363,
+                    6375099927.272728
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6341787648.0,
+                    6375342080.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 6,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:2loelx",
+                "nid:fq4dj8"
+            ]
+        },
+        "nid:2loelx": {
+            "node_id": "nid:2loelx",
+            "par_id": "nid:fvjw5d",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6343223563.636363,
+                    6355974109.090909
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6341787648.0,
+                    6358564864.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:fq4dj8": {
+            "node_id": "nid:fq4dj8",
+            "par_id": "nid:fvjw5d",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6362349381.818182,
+                    6375099927.272728
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6358564864.0,
+                    6375342080.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:2kgbzv": {
+            "node_id": "nid:2kgbzv",
+            "par_id": "nid:6th9b3",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6381475200.0,
+                    6438852654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6375342080.0,
+                    6442450944.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 11,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:guyten",
+                "nid:otkvcg"
+            ]
+        },
+        "nid:guyten": {
+            "node_id": "nid:guyten",
+            "par_id": "nid:2kgbzv",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6381475200.0,
+                    6406976290.909091
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6375342080.0,
+                    6408896512.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:vs94j3",
+                "nid:4i3hr4"
+            ]
+        },
+        "nid:vs94j3": {
+            "node_id": "nid:vs94j3",
+            "par_id": "nid:guyten",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6381475200.0,
+                    6387850472.727272
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6375342080.0,
+                    6392119296.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:4i3hr4": {
+            "node_id": "nid:4i3hr4",
+            "par_id": "nid:guyten",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6394225745.454546,
+                    6406976290.909091
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6392119296.0,
+                    6408896512.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:otkvcg": {
+            "node_id": "nid:otkvcg",
+            "par_id": "nid:2kgbzv",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6413351563.636363,
+                    6438852654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6408896512.0,
+                    6442450944.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:bq9ssq",
+                "nid:1c6yz7"
+            ]
+        },
+        "nid:bq9ssq": {
+            "node_id": "nid:bq9ssq",
+            "par_id": "nid:otkvcg",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6413351563.636363,
+                    6419726836.363637
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6408896512.0,
+                    6425673728.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:1c6yz7": {
+            "node_id": "nid:1c6yz7",
+            "par_id": "nid:otkvcg",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6426102109.090909,
+                    6438852654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6425673728.0,
+                    6442450944.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:qgomrd": {
+            "node_id": "nid:qgomrd",
+            "par_id": "nid:oid22d",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6942499200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    8589934592.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 79,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:17ikc0"
+            ]
+        },
+        "nid:17ikc0": {
+            "node_id": "nid:17ikc0",
+            "par_id": "nid:qgomrd",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6942499200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    7516192768.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 78,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:lpjwom"
+            ]
+        },
+        "nid:lpjwom": {
+            "node_id": "nid:lpjwom",
+            "par_id": "nid:17ikc0",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6942499200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6979321856.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 78,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:h0k5xu",
+                "nid:prvzih"
+            ]
+        },
+        "nid:h0k5xu": {
+            "node_id": "nid:h0k5xu",
+            "par_id": "nid:lpjwom",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6706614109.090909
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6710886400.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 43,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:ialvti",
+                "nid:obug5h"
+            ]
+        },
+        "nid:ialvti": {
+            "node_id": "nid:ialvti",
+            "par_id": "nid:h0k5xu",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6572733381.818182
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6576668672.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 22,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:hf6qfu",
+                "nid:jivc0x"
+            ]
+        },
+        "nid:hf6qfu": {
+            "node_id": "nid:hf6qfu",
+            "par_id": "nid:ialvti",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6508980654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6509559808.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 12,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:st0hej",
+                "nid:mal44i"
+            ]
+        },
+        "nid:st0hej": {
+            "node_id": "nid:st0hej",
+            "par_id": "nid:hf6qfu",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6470729018.181818
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6476005376.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 4,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:bod8v2",
+                "nid:bsmyw2"
+            ]
+        },
+        "nid:bod8v2": {
+            "node_id": "nid:bod8v2",
+            "par_id": "nid:st0hej",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6457978472.727272
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6459228160.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:bsmyw2": {
+            "node_id": "nid:bsmyw2",
+            "par_id": "nid:st0hej",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6464353745.454546,
+                    6470729018.181818
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6459228160.0,
+                    6476005376.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:mal44i": {
+            "node_id": "nid:mal44i",
+            "par_id": "nid:hf6qfu",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6477104290.909091,
+                    6508980654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6476005376.0,
+                    6509559808.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 6,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:pnmbpl",
+                "nid:h4y805"
+            ]
+        },
+        "nid:pnmbpl": {
+            "node_id": "nid:pnmbpl",
+            "par_id": "nid:mal44i",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6477104290.909091,
+                    6489854836.363637
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6476005376.0,
+                    6492782592.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:h4y805": {
+            "node_id": "nid:h4y805",
+            "par_id": "nid:mal44i",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6496230109.090909,
+                    6508980654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6492782592.0,
+                    6509559808.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:jivc0x": {
+            "node_id": "nid:jivc0x",
+            "par_id": "nid:ialvti",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6515355927.272728,
+                    6572733381.818182
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6509559808.0,
+                    6576668672.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 13,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:snv3x5",
+                "nid:ltsrsk"
+            ]
+        },
+        "nid:snv3x5": {
+            "node_id": "nid:snv3x5",
+            "par_id": "nid:jivc0x",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6515355927.272728,
+                    6540857018.181818
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6509559808.0,
+                    6543114240.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:b9quxa",
+                "nid:9hu926"
+            ]
+        },
+        "nid:b9quxa": {
+            "node_id": "nid:b9quxa",
+            "par_id": "nid:snv3x5",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6515355927.272728,
+                    6521731200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6509559808.0,
+                    6526337024.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:9hu926": {
+            "node_id": "nid:9hu926",
+            "par_id": "nid:snv3x5",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6528106472.727272,
+                    6540857018.181818
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6526337024.0,
+                    6543114240.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:ltsrsk": {
+            "node_id": "nid:ltsrsk",
+            "par_id": "nid:jivc0x",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6547232290.909091,
+                    6572733381.818182
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6543114240.0,
+                    6576668672.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 5
+        },
+        "nid:obug5h": {
+            "node_id": "nid:obug5h",
+            "par_id": "nid:h0k5xu",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6579108654.545454,
+                    6706614109.090909
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6710886400.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 21,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:jk06xv",
+                "nid:g2gwdo"
+            ]
+        },
+        "nid:jk06xv": {
+            "node_id": "nid:jk06xv",
+            "par_id": "nid:obug5h",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6579108654.545454,
+                    6642861381.818182
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6643777536.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 11,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:w7jzmo",
+                "nid:uwdz1k"
+            ]
+        },
+        "nid:w7jzmo": {
+            "node_id": "nid:w7jzmo",
+            "par_id": "nid:jk06xv",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6579108654.545454,
+                    6604609745.454546
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6610223104.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 7,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 5
+        },
+        "nid:uwdz1k": {
+            "node_id": "nid:uwdz1k",
+            "par_id": "nid:jk06xv",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6610985018.181818,
+                    6642861381.818182
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6610223104.0,
+                    6643777536.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:uebe45",
+                "nid:zrhg5j"
+            ]
+        },
+        "nid:uebe45": {
+            "node_id": "nid:uebe45",
+            "par_id": "nid:uwdz1k",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6610985018.181818,
+                    6623735563.636363
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6610223104.0,
+                    6627000320.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:zrhg5j": {
+            "node_id": "nid:zrhg5j",
+            "par_id": "nid:uwdz1k",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6630110836.363637,
+                    6642861381.818182
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6627000320.0,
+                    6643777536.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:g2gwdo": {
+            "node_id": "nid:g2gwdo",
+            "par_id": "nid:obug5h",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6649236654.545454,
+                    6706614109.090909
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6643777536.0,
+                    6710886400.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 13,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:97btox",
+                "nid:9emyml"
+            ]
+        },
+        "nid:97btox": {
+            "node_id": "nid:97btox",
+            "par_id": "nid:g2gwdo",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6649236654.545454,
+                    6674737745.454545
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6643777536.0,
+                    6677331968.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:bjnrq9",
+                "nid:b1ymo8"
+            ]
+        },
+        "nid:bjnrq9": {
+            "node_id": "nid:bjnrq9",
+            "par_id": "nid:97btox",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6649236654.545454,
+                    6655611927.272728
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6643777536.0,
+                    6660554752.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:b1ymo8": {
+            "node_id": "nid:b1ymo8",
+            "par_id": "nid:97btox",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6661987200.0,
+                    6674737745.454545
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6660554752.0,
+                    6677331968.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:9emyml": {
+            "node_id": "nid:9emyml",
+            "par_id": "nid:g2gwdo",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6681113018.181818,
+                    6706614109.090909
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6677331968.0,
+                    6710886400.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:4ab95i",
+                "nid:7gcd1o"
+            ]
+        },
+        "nid:4ab95i": {
+            "node_id": "nid:4ab95i",
+            "par_id": "nid:9emyml",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6681113018.181818,
+                    6693863563.636363
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6677331968.0,
+                    6694109184.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:7gcd1o": {
+            "node_id": "nid:7gcd1o",
+            "par_id": "nid:9emyml",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6700238836.363637,
+                    6706614109.090909
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6694109184.0,
+                    6710886400.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:prvzih": {
+            "node_id": "nid:prvzih",
+            "par_id": "nid:lpjwom",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6712989381.818182,
+                    6942499200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6979321856.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 35,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:easa23",
+                "nid:j1l696"
+            ]
+        },
+        "nid:easa23": {
+            "node_id": "nid:easa23",
+            "par_id": "nid:prvzih",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6712989381.818182,
+                    6840494836.363637
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6845104128.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 20,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:oaqaf6",
+                "nid:7vckr5"
+            ]
+        },
+        "nid:oaqaf6": {
+            "node_id": "nid:oaqaf6",
+            "par_id": "nid:easa23",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6712989381.818182,
+                    6776742109.090909
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6777995264.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 10,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:vrr6tt",
+                "nid:jk0qbi"
+            ]
+        },
+        "nid:vrr6tt": {
+            "node_id": "nid:vrr6tt",
+            "par_id": "nid:oaqaf6",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6712989381.818182,
+                    6738490472.727272
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6744440832.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 6,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:swug8s",
+                "nid:2y3xx2"
+            ]
+        },
+        "nid:swug8s": {
+            "node_id": "nid:swug8s",
+            "par_id": "nid:vrr6tt",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6712989381.818182,
+                    6725739927.272728
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6727663616.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:2y3xx2": {
+            "node_id": "nid:2y3xx2",
+            "par_id": "nid:vrr6tt",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6732115200.0,
+                    6738490472.727272
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6727663616.0,
+                    6744440832.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:jk0qbi": {
+            "node_id": "nid:jk0qbi",
+            "par_id": "nid:oaqaf6",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6744865745.454545,
+                    6776742109.090909
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6744440832.0,
+                    6777995264.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:22pft8",
+                "nid:e86eva"
+            ]
+        },
+        "nid:22pft8": {
+            "node_id": "nid:22pft8",
+            "par_id": "nid:jk0qbi",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6744865745.454545,
+                    6757616290.909091
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6744440832.0,
+                    6761218048.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:e86eva": {
+            "node_id": "nid:e86eva",
+            "par_id": "nid:jk0qbi",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6763991563.636363,
+                    6776742109.090909
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6761218048.0,
+                    6777995264.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:7vckr5": {
+            "node_id": "nid:7vckr5",
+            "par_id": "nid:easa23",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6783117381.818182,
+                    6840494836.363637
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6777995264.0,
+                    6845104128.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 8,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:zru8nc",
+                "nid:r3vwai"
+            ]
+        },
+        "nid:zru8nc": {
+            "node_id": "nid:zru8nc",
+            "par_id": "nid:7vckr5",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6783117381.818182,
+                    6808618472.727272
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6777995264.0,
+                    6811549696.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 4,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:ynrvem",
+                "nid:2xcm3q"
+            ]
+        },
+        "nid:ynrvem": {
+            "node_id": "nid:ynrvem",
+            "par_id": "nid:zru8nc",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6783117381.818182,
+                    6789492654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6777995264.0,
+                    6794772480.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:2xcm3q": {
+            "node_id": "nid:2xcm3q",
+            "par_id": "nid:zru8nc",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6795867927.272728,
+                    6808618472.727272
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6794772480.0,
+                    6811549696.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:r3vwai": {
+            "node_id": "nid:r3vwai",
+            "par_id": "nid:7vckr5",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6814993745.454545,
+                    6840494836.363637
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6811549696.0,
+                    6845104128.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 6,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 5
+        },
+        "nid:j1l696": {
+            "node_id": "nid:j1l696",
+            "par_id": "nid:prvzih",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6846870109.090909,
+                    6942499200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6845104128.0,
+                    6979321856.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 14,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:wj57fz",
+                "nid:nb14xw"
+            ]
+        },
+        "nid:wj57fz": {
+            "node_id": "nid:wj57fz",
+            "par_id": "nid:j1l696",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6846870109.090909,
+                    6910622836.363637
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6845104128.0,
+                    6912212992.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 14,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:600qnv",
+                "nid:ipyavs"
+            ]
+        },
+        "nid:600qnv": {
+            "node_id": "nid:600qnv",
+            "par_id": "nid:wj57fz",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6846870109.090909,
+                    6872371200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6845104128.0,
+                    6878658560.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:jrx2d8",
+                "nid:e949te"
+            ]
+        },
+        "nid:jrx2d8": {
+            "node_id": "nid:jrx2d8",
+            "par_id": "nid:600qnv",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6846870109.090909,
+                    6859620654.545454
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6845104128.0,
+                    6861881344.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:e949te": {
+            "node_id": "nid:e949te",
+            "par_id": "nid:600qnv",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6865995927.272728,
+                    6872371200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6861881344.0,
+                    6878658560.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:ipyavs": {
+            "node_id": "nid:ipyavs",
+            "par_id": "nid:wj57fz",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6878746472.727272,
+                    6910622836.363637
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6878658560.0,
+                    6912212992.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 7,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:494gcs",
+                "nid:l10pzk"
+            ]
+        },
+        "nid:494gcs": {
+            "node_id": "nid:494gcs",
+            "par_id": "nid:ipyavs",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6878746472.727272,
+                    6891497018.181818
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6878658560.0,
+                    6895435776.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:l10pzk": {
+            "node_id": "nid:l10pzk",
+            "par_id": "nid:ipyavs",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6897872290.909091,
+                    6910622836.363637
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6895435776.0,
+                    6912212992.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:nb14xw": {
+            "node_id": "nid:nb14xw",
+            "par_id": "nid:j1l696",
+            "columns": [
+                "datetime"
+            ],
+            "combination": [
+                0
+            ],
+            "actual_intervals": [
+                [
+                    6916998109.090909,
+                    6942499200.0
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6912212992.0,
+                    6979321856.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 5
+        },
+        "nid:j5h0sc": {
+            "node_id": "nid:j5h0sc",
+            "par_id": "nid:000000",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -3.514768119101935,
+                    2.2843333544703444
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -8.0,
+                    8.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 100,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:bwpdqr",
+                "nid:zknn16"
+            ]
+        },
+        "nid:bwpdqr": {
+            "node_id": "nid:bwpdqr",
+            "par_id": "nid:j5h0sc",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.04690446151942483,
+                    2.2843333544703444
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.0,
+                    8.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 49,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:o2czvp"
+            ]
+        },
+        "nid:o2czvp": {
+            "node_id": "nid:o2czvp",
+            "par_id": "nid:bwpdqr",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.04690446151942483,
+                    2.2843333544703444
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.0,
+                    4.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 49,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:ouhz1p",
+                "nid:jiwfe1"
+            ]
+        },
+        "nid:ouhz1p": {
+            "node_id": "nid:ouhz1p",
+            "par_id": "nid:o2czvp",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.04690446151942483,
+                    1.8833538579153102
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.0,
+                    2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 50,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:lcl0x3",
+                "nid:cmvz27"
+            ]
+        },
+        "nid:lcl0x3": {
+            "node_id": "nid:lcl0x3",
+            "par_id": "nid:ouhz1p",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.04690446151942483,
+                    0.9137058074169033
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.0,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 34,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:pwpfo3",
+                "nid:k3ytyl"
+            ]
+        },
+        "nid:pwpfo3": {
+            "node_id": "nid:pwpfo3",
+            "par_id": "nid:lcl0x3",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.04690446151942483,
+                    0.4927593914157971
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.0,
+                    0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 22,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:0n6qq3",
+                "nid:id8t3z"
+            ]
+        },
+        "nid:0n6qq3": {
+            "node_id": "nid:0n6qq3",
+            "par_id": "nid:pwpfo3",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.04690446151942483,
+                    0.24995754081903795
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.0,
+                    0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 13,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:6vznyj",
+                "nid:ibwny3"
+            ]
+        },
+        "nid:6vznyj": {
+            "node_id": "nid:6vznyj",
+            "par_id": "nid:0n6qq3",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.13332449749778202,
+                    0.24995754081903795
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.125,
+                    0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 9,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:xzrcqa",
+                "nid:ri7eoi"
+            ]
+        },
+        "nid:xzrcqa": {
+            "node_id": "nid:xzrcqa",
+            "par_id": "nid:6vznyj",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.19286086320953463,
+                    0.24995754081903795
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.1875,
+                    0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 9,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:ebyr0h",
+                "nid:g7zrsc"
+            ]
+        },
+        "nid:ebyr0h": {
+            "node_id": "nid:ebyr0h",
+            "par_id": "nid:xzrcqa",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.19286086320953463,
+                    0.2070755740546079
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.1875,
+                    0.21875
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:g7zrsc": {
+            "node_id": "nid:g7zrsc",
+            "par_id": "nid:xzrcqa",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.22858201102290415,
+                    0.24995754081903795
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.21875,
+                    0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:ri7eoi": {
+            "node_id": "nid:ri7eoi",
+            "par_id": "nid:6vznyj",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.13332449749778202,
+                    0.13332449749778202
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.125,
+                    0.1875
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:ibwny3": {
+            "node_id": "nid:ibwny3",
+            "par_id": "nid:0n6qq3",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.04690446151942483,
+                    0.10834954876317913
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.0,
+                    0.125
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 9,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:kpbvqg",
+                "nid:6b4mxo"
+            ]
+        },
+        "nid:kpbvqg": {
+            "node_id": "nid:kpbvqg",
+            "par_id": "nid:ibwny3",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.08270993579791167,
+                    0.10834954876317913
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.0625,
+                    0.125
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 6,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 5
+        },
+        "nid:6b4mxo": {
+            "node_id": "nid:6b4mxo",
+            "par_id": "nid:ibwny3",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.04690446151942483,
+                    0.0503707161894736
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.0,
+                    0.0625
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:id8t3z": {
+            "node_id": "nid:id8t3z",
+            "par_id": "nid:pwpfo3",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.26166847688739403,
+                    0.4927593914157971
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.25,
+                    0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 7,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:nmxu1c",
+                "nid:6yqq39"
+            ]
+        },
+        "nid:nmxu1c": {
+            "node_id": "nid:nmxu1c",
+            "par_id": "nid:id8t3z",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.3923080556558746,
+                    0.4927593914157971
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.375,
+                    0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:jpyzfh",
+                "nid:3s3bnt"
+            ]
+        },
+        "nid:jpyzfh": {
+            "node_id": "nid:jpyzfh",
+            "par_id": "nid:nmxu1c",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.3923080556558746,
+                    0.4268960203372312
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.375,
+                    0.4375
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:wvcb8f",
+                "nid:5dbp3t"
+            ]
+        },
+        "nid:wvcb8f": {
+            "node_id": "nid:wvcb8f",
+            "par_id": "nid:jpyzfh",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.4138999766425578,
+                    0.4268960203372312
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.40625,
+                    0.4375
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:5dbp3t": {
+            "node_id": "nid:5dbp3t",
+            "par_id": "nid:jpyzfh",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.3923080556558746,
+                    0.40318568155495604
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.375,
+                    0.40625
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:3s3bnt": {
+            "node_id": "nid:3s3bnt",
+            "par_id": "nid:nmxu1c",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.4927593914157971,
+                    0.4927593914157971
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.4375,
+                    0.5
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:6yqq39": {
+            "node_id": "nid:6yqq39",
+            "par_id": "nid:id8t3z",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.26166847688739403,
+                    0.3538850114752165
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.25,
+                    0.375
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:k3ytyl": {
+            "node_id": "nid:k3ytyl",
+            "par_id": "nid:lcl0x3",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.5211257395089367,
+                    0.9137058074169033
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.5,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 9,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:2ddfyx",
+                "nid:ioc8jn"
+            ]
+        },
+        "nid:2ddfyx": {
+            "node_id": "nid:2ddfyx",
+            "par_id": "nid:k3ytyl",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.5211257395089367,
+                    0.7142238203796749
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.5,
+                    0.75
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 7,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:bvm4ia",
+                "nid:ey319b"
+            ]
+        },
+        "nid:bvm4ia": {
+            "node_id": "nid:bvm4ia",
+            "par_id": "nid:2ddfyx",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.6322014141604557,
+                    0.7142238203796749
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.625,
+                    0.75
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:ey319b": {
+            "node_id": "nid:ey319b",
+            "par_id": "nid:2ddfyx",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.5211257395089367,
+                    0.6111037098657089
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.5,
+                    0.625
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:ioc8jn": {
+            "node_id": "nid:ioc8jn",
+            "par_id": "nid:k3ytyl",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    0.8194666083729034,
+                    0.9137058074169033
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    0.75,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:cmvz27": {
+            "node_id": "nid:cmvz27",
+            "par_id": "nid:ouhz1p",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    1.0475853374178141,
+                    1.8833538579153102
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    1.0,
+                    2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 13,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:2n0jx5",
+                "nid:g9dg87"
+            ]
+        },
+        "nid:2n0jx5": {
+            "node_id": "nid:2n0jx5",
+            "par_id": "nid:cmvz27",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    1.5641025797286243,
+                    1.8833538579153102
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    1.5,
+                    2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:g9dg87": {
+            "node_id": "nid:g9dg87",
+            "par_id": "nid:cmvz27",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    1.0475853374178141,
+                    1.4907219169590233
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    1.0,
+                    1.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 10,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:a4lbjd",
+                "nid:dju40n"
+            ]
+        },
+        "nid:a4lbjd": {
+            "node_id": "nid:a4lbjd",
+            "par_id": "nid:g9dg87",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    1.2623221862070568,
+                    1.4907219169590233
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    1.25,
+                    1.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:s9z9nt",
+                "nid:t0y6sw"
+            ]
+        },
+        "nid:s9z9nt": {
+            "node_id": "nid:s9z9nt",
+            "par_id": "nid:a4lbjd",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    1.2623221862070568,
+                    1.343954419584932
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    1.25,
+                    1.375
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:t0y6sw": {
+            "node_id": "nid:t0y6sw",
+            "par_id": "nid:a4lbjd",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    1.425506126612747,
+                    1.4907219169590233
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    1.375,
+                    1.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:dju40n": {
+            "node_id": "nid:dju40n",
+            "par_id": "nid:g9dg87",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    1.0475853374178141,
+                    1.1973219806427609
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    1.0,
+                    1.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:mmb3at",
+                "nid:it4n6w"
+            ]
+        },
+        "nid:mmb3at": {
+            "node_id": "nid:mmb3at",
+            "par_id": "nid:dju40n",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    1.1972598648579713,
+                    1.1973219806427609
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    1.125,
+                    1.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:it4n6w": {
+            "node_id": "nid:it4n6w",
+            "par_id": "nid:dju40n",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    1.0475853374178141,
+                    1.1159384541230788
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    1.0,
+                    1.125
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:jiwfe1": {
+            "node_id": "nid:jiwfe1",
+            "par_id": "nid:o2czvp",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    2.2843333544703444,
+                    2.2843333544703444
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    2.0,
+                    4.0
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:zknn16": {
+            "node_id": "nid:zknn16",
+            "par_id": "nid:j5h0sc",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -3.514768119101935,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -8.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 50,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:jvud7u"
+            ]
+        },
+        "nid:jvud7u": {
+            "node_id": "nid:jvud7u",
+            "par_id": "nid:zknn16",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -3.514768119101935,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -4.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 49,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:l3vgdf",
+                "nid:xfp8i3"
+            ]
+        },
+        "nid:l3vgdf": {
+            "node_id": "nid:l3vgdf",
+            "par_id": "nid:jvud7u",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -1.9005842612433008,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -2.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 46,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:x48gvw",
+                "nid:drb55k"
+            ]
+        },
+        "nid:x48gvw": {
+            "node_id": "nid:x48gvw",
+            "par_id": "nid:l3vgdf",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.9975675388380426,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -1.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 30,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:69ek0z",
+                "nid:ntantg"
+            ]
+        },
+        "nid:69ek0z": {
+            "node_id": "nid:69ek0z",
+            "par_id": "nid:x48gvw",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.47160433354782627,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.5,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 15,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:sudeod",
+                "nid:tps7yl"
+            ]
+        },
+        "nid:sudeod": {
+            "node_id": "nid:sudeod",
+            "par_id": "nid:69ek0z",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.47160433354782627,
+                    -0.25766375938677644
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.5,
+                    -0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 10,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:17yxhn",
+                "nid:6yojh0"
+            ]
+        },
+        "nid:17yxhn": {
+            "node_id": "nid:17yxhn",
+            "par_id": "nid:sudeod",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.47160433354782627,
+                    -0.3824862134144711
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.5,
+                    -0.375
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:qgbaug",
+                "nid:un6l46"
+            ]
+        },
+        "nid:qgbaug": {
+            "node_id": "nid:qgbaug",
+            "par_id": "nid:17yxhn",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.4238962336007505,
+                    -0.3824862134144711
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.4375,
+                    -0.375
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:wwfedf",
+                "nid:fdp9dz"
+            ]
+        },
+        "nid:wwfedf": {
+            "node_id": "nid:wwfedf",
+            "par_id": "nid:qgbaug",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.4238962336007505,
+                    -0.4208648204222881
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.4375,
+                    -0.40625
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:fdp9dz": {
+            "node_id": "nid:fdp9dz",
+            "par_id": "nid:qgbaug",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.38418568099812267,
+                    -0.3824862134144711
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.40625,
+                    -0.375
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:un6l46": {
+            "node_id": "nid:un6l46",
+            "par_id": "nid:17yxhn",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.47160433354782627,
+                    -0.47160433354782627
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.5,
+                    -0.4375
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:6yojh0": {
+            "node_id": "nid:6yojh0",
+            "par_id": "nid:sudeod",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.3640867757814793,
+                    -0.25766375938677644
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.375,
+                    -0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 6,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:knuomi",
+                "nid:pyxb7i"
+            ]
+        },
+        "nid:knuomi": {
+            "node_id": "nid:knuomi",
+            "par_id": "nid:6yojh0",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.3640867757814793,
+                    -0.3320303964657047
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.375,
+                    -0.3125
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:pyxb7i": {
+            "node_id": "nid:pyxb7i",
+            "par_id": "nid:6yojh0",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.29610040290354395,
+                    -0.25766375938677644
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.3125,
+                    -0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:tps7yl": {
+            "node_id": "nid:tps7yl",
+            "par_id": "nid:69ek0z",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.18350287900215623,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.25,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:ntantg": {
+            "node_id": "nid:ntantg",
+            "par_id": "nid:x48gvw",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.9975675388380426,
+                    -0.5378339530983239
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -1.0,
+                    -0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 16,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:xvvg70",
+                "nid:xu7vsr"
+            ]
+        },
+        "nid:xvvg70": {
+            "node_id": "nid:xvvg70",
+            "par_id": "nid:ntantg",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.9975675388380426,
+                    -0.7773466557621179
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -1.0,
+                    -0.75
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 7,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:9x8air",
+                "nid:yjc606"
+            ]
+        },
+        "nid:9x8air": {
+            "node_id": "nid:9x8air",
+            "par_id": "nid:xvvg70",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.8295711866366616,
+                    -0.7773466557621179
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.875,
+                    -0.75
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:kosblx",
+                "nid:jqgigx"
+            ]
+        },
+        "nid:kosblx": {
+            "node_id": "nid:kosblx",
+            "par_id": "nid:9x8air",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.8295711866366616,
+                    -0.8182209613286916
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.875,
+                    -0.8125
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:jqgigx": {
+            "node_id": "nid:jqgigx",
+            "par_id": "nid:9x8air",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.8000382143947599,
+                    -0.7773466557621179
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.8125,
+                    -0.75
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:yjc606": {
+            "node_id": "nid:yjc606",
+            "par_id": "nid:xvvg70",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.9975675388380426,
+                    -0.8773633217919377
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -1.0,
+                    -0.875
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 4,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:xu7vsr": {
+            "node_id": "nid:xu7vsr",
+            "par_id": "nid:ntantg",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.6993948213325896,
+                    -0.5378339530983239
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.75,
+                    -0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 7,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:dozfi9",
+                "nid:qo6jlb"
+            ]
+        },
+        "nid:dozfi9": {
+            "node_id": "nid:dozfi9",
+            "par_id": "nid:xu7vsr",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.6993948213325896,
+                    -0.6311752177478401
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.75,
+                    -0.625
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:am2y1q",
+                "nid:txqwu2"
+            ]
+        },
+        "nid:am2y1q": {
+            "node_id": "nid:am2y1q",
+            "par_id": "nid:dozfi9",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.684059252016005,
+                    -0.6311752177478401
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.6875,
+                    -0.625
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 4,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:txqwu2": {
+            "node_id": "nid:txqwu2",
+            "par_id": "nid:dozfi9",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.6993948213325896,
+                    -0.6993948213325896
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.75,
+                    -0.6875
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:qo6jlb": {
+            "node_id": "nid:qo6jlb",
+            "par_id": "nid:xu7vsr",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -0.5816729970873883,
+                    -0.5378339530983239
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -0.625,
+                    -0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:drb55k": {
+            "node_id": "nid:drb55k",
+            "par_id": "nid:l3vgdf",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -1.9005842612433008,
+                    -1.0322430367309077
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -2.0,
+                    -1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 14,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:agxtpg",
+                "nid:pvnwcx"
+            ]
+        },
+        "nid:agxtpg": {
+            "node_id": "nid:agxtpg",
+            "par_id": "nid:drb55k",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -1.4859038586477893,
+                    -1.0322430367309077
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -1.5,
+                    -1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 8,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:lmv8db",
+                "nid:qcpn4s"
+            ]
+        },
+        "nid:lmv8db": {
+            "node_id": "nid:lmv8db",
+            "par_id": "nid:agxtpg",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -1.4859038586477893,
+                    -1.291058455346977
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -1.5,
+                    -1.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 6,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:qcpn4s": {
+            "node_id": "nid:qcpn4s",
+            "par_id": "nid:agxtpg",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -1.1801910156259166,
+                    -1.0322430367309077
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -1.25,
+                    -1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:pvnwcx": {
+            "node_id": "nid:pvnwcx",
+            "par_id": "nid:drb55k",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -1.9005842612433008,
+                    -1.5560236776953074
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -2.0,
+                    -1.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 7,
+            "subnodes": [],
+            "node_type": "branch",
+            "children": [
+                "nid:84tihk",
+                "nid:j3g63n"
+            ]
+        },
+        "nid:84tihk": {
+            "node_id": "nid:84tihk",
+            "par_id": "nid:pvnwcx",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -1.6210874964712072,
+                    -1.5560236776953074
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -1.75,
+                    -1.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:j3g63n": {
+            "node_id": "nid:j3g63n",
+            "par_id": "nid:pvnwcx",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -1.9005842612433008,
+                    -1.7620388850389275
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -2.0,
+                    -1.75
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 4,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:xfp8i3": {
+            "node_id": "nid:xfp8i3",
+            "par_id": "nid:jvud7u",
+            "columns": [
+                "float"
+            ],
+            "combination": [
+                1
+            ],
+            "actual_intervals": [
+                [
+                    -3.514768119101935,
+                    -2.005556590963453
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    -4.0,
+                    -2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:r827oh": {
+            "node_id": "nid:r827oh",
+            "par_id": "nid:000000",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6942499200.0
+                ],
+                [
+                    -3.514768119101935,
+                    2.2843333544703444
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    4294967296.0,
+                    8589934592.0
+                ],
+                [
+                    -8.0,
+                    8.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 97,
+            "subnodes": [
+                "nid:oid22d",
+                "nid:j5h0sc"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:d4igqi",
+                "nid:gq3xhz",
+                "nid:8o767n",
+                "nid:m51kon"
+            ]
+        },
+        "nid:d4igqi": {
+            "node_id": "nid:d4igqi",
+            "par_id": "nid:r827oh",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6419726836.363637
+                ],
+                [
+                    0.08270993579791167,
+                    2.2843333544703444
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    4294967296.0,
+                    6442450944.0
+                ],
+                [
+                    0.0,
+                    8.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 14,
+            "subnodes": [
+                "nid:ezsn9i",
+                "nid:bwpdqr"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:mjiuzj"
+            ]
+        },
+        "nid:mjiuzj": {
+            "node_id": "nid:mjiuzj",
+            "par_id": "nid:d4igqi",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6419726836.363637
+                ],
+                [
+                    0.08270993579791167,
+                    2.2843333544703444
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    5368709120.0,
+                    6442450944.0
+                ],
+                [
+                    0.0,
+                    4.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 12,
+            "subnodes": [
+                "nid:567j22",
+                "nid:o2czvp"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:382ia2",
+                "nid:4qo7y5"
+            ]
+        },
+        "nid:382ia2": {
+            "node_id": "nid:382ia2",
+            "par_id": "nid:mjiuzj",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6419726836.363637
+                ],
+                [
+                    0.08270993579791167,
+                    1.8833538579153102
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    5905580032.0,
+                    6442450944.0
+                ],
+                [
+                    0.0,
+                    2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 13,
+            "subnodes": [
+                "nid:l34033",
+                "nid:ouhz1p"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:y4hka5",
+                "nid:egkbns"
+            ]
+        },
+        "nid:y4hka5": {
+            "node_id": "nid:y4hka5",
+            "par_id": "nid:382ia2",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6311347200.0,
+                    6419726836.363637
+                ],
+                [
+                    0.08270993579791167,
+                    0.7142238203796749
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6174015488.0,
+                    6442450944.0
+                ],
+                [
+                    0.0,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 7,
+            "subnodes": [
+                "nid:9ybgeb",
+                "nid:lcl0x3"
+            ],
+            "node_type": "leaf",
+            "true_count": 6
+        },
+        "nid:egkbns": {
+            "node_id": "nid:egkbns",
+            "par_id": "nid:382ia2",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6324097745.454546,
+                    6413351563.636363
+                ],
+                [
+                    1.1973219806427609,
+                    1.8833538579153102
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6174015488.0,
+                    6442450944.0
+                ],
+                [
+                    1.0,
+                    2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 6,
+            "subnodes": [
+                "nid:9ybgeb",
+                "nid:cmvz27"
+            ],
+            "node_type": "leaf",
+            "true_count": 5
+        },
+        "nid:4qo7y5": {
+            "node_id": "nid:4qo7y5",
+            "par_id": "nid:mjiuzj",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6406976290.909091,
+                    6406976290.909091
+                ],
+                [
+                    2.2843333544703444,
+                    2.2843333544703444
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    5905580032.0,
+                    6442450944.0
+                ],
+                [
+                    2.0,
+                    4.0
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:l34033",
+                "nid:jiwfe1"
+            ],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:gq3xhz": {
+            "node_id": "nid:gq3xhz",
+            "par_id": "nid:r827oh",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6317722472.727272,
+                    6438852654.545454
+                ],
+                [
+                    -1.6210874964712072,
+                    -0.3640867757814793
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    4294967296.0,
+                    6442450944.0
+                ],
+                [
+                    -8.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 9,
+            "subnodes": [
+                "nid:ezsn9i",
+                "nid:zknn16"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:jc8si8"
+            ]
+        },
+        "nid:jc8si8": {
+            "node_id": "nid:jc8si8",
+            "par_id": "nid:gq3xhz",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6317722472.727272,
+                    6438852654.545454
+                ],
+                [
+                    -1.6210874964712072,
+                    -0.3640867757814793
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    5368709120.0,
+                    6442450944.0
+                ],
+                [
+                    -4.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 10,
+            "subnodes": [
+                "nid:567j22",
+                "nid:jvud7u"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:tmt6qr"
+            ]
+        },
+        "nid:tmt6qr": {
+            "node_id": "nid:tmt6qr",
+            "par_id": "nid:jc8si8",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6317722472.727272,
+                    6438852654.545454
+                ],
+                [
+                    -1.6210874964712072,
+                    -0.3640867757814793
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    5905580032.0,
+                    6442450944.0
+                ],
+                [
+                    -2.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 9,
+            "subnodes": [
+                "nid:l34033",
+                "nid:l3vgdf"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:6zkkpx",
+                "nid:i7gzdr"
+            ]
+        },
+        "nid:6zkkpx": {
+            "node_id": "nid:6zkkpx",
+            "par_id": "nid:tmt6qr",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6317722472.727272,
+                    6438852654.545454
+                ],
+                [
+                    -0.8773633217919377,
+                    -0.3640867757814793
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6174015488.0,
+                    6442450944.0
+                ],
+                [
+                    -1.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:9ybgeb",
+                "nid:x48gvw"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:9itzq7",
+                "nid:q7i15b"
+            ]
+        },
+        "nid:9itzq7": {
+            "node_id": "nid:9itzq7",
+            "par_id": "nid:6zkkpx",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6317722472.727272,
+                    6330473018.181818
+                ],
+                [
+                    -0.4208648204222881,
+                    -0.3640867757814793
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6308233216.0,
+                    6442450944.0
+                ],
+                [
+                    -0.5,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:6th9b3",
+                "nid:69ek0z"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:q7i15b": {
+            "node_id": "nid:q7i15b",
+            "par_id": "nid:6zkkpx",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6343223563.636363,
+                    6438852654.545454
+                ],
+                [
+                    -0.8773633217919377,
+                    -0.5816729970873883
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6308233216.0,
+                    6442450944.0
+                ],
+                [
+                    -1.0,
+                    -0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:6th9b3",
+                "nid:ntantg"
+            ],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:i7gzdr": {
+            "node_id": "nid:i7gzdr",
+            "par_id": "nid:tmt6qr",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6355974109.090909,
+                    6432477381.818182
+                ],
+                [
+                    -1.6210874964712072,
+                    -1.1801910156259166
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6174015488.0,
+                    6442450944.0
+                ],
+                [
+                    -2.0,
+                    -1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:9ybgeb",
+                "nid:drb55k"
+            ],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:8o767n": {
+            "node_id": "nid:8o767n",
+            "par_id": "nid:r827oh",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6942499200.0
+                ],
+                [
+                    -3.514768119101935,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    8589934592.0
+                ],
+                [
+                    -8.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 42,
+            "subnodes": [
+                "nid:qgomrd",
+                "nid:zknn16"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:rsfvxj"
+            ]
+        },
+        "nid:rsfvxj": {
+            "node_id": "nid:rsfvxj",
+            "par_id": "nid:8o767n",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6942499200.0
+                ],
+                [
+                    -3.514768119101935,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    7516192768.0
+                ],
+                [
+                    -4.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 42,
+            "subnodes": [
+                "nid:17ikc0",
+                "nid:jvud7u"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:z7iuqk",
+                "nid:kj79x3"
+            ]
+        },
+        "nid:z7iuqk": {
+            "node_id": "nid:z7iuqk",
+            "par_id": "nid:rsfvxj",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6942499200.0
+                ],
+                [
+                    -1.9005842612433008,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6979321856.0
+                ],
+                [
+                    -2.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 39,
+            "subnodes": [
+                "nid:lpjwom",
+                "nid:l3vgdf"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:ebxirn",
+                "nid:khl9d8",
+                "nid:fhfc9p",
+                "nid:s866rc"
+            ]
+        },
+        "nid:ebxirn": {
+            "node_id": "nid:ebxirn",
+            "par_id": "nid:z7iuqk",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6706614109.090909
+                ],
+                [
+                    -0.928159184570213,
+                    -0.05446484378125436
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6710886400.0
+                ],
+                [
+                    -1.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 13,
+            "subnodes": [
+                "nid:h0k5xu",
+                "nid:x48gvw"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:rvnd5k",
+                "nid:acv9rd",
+                "nid:s5687u",
+                "nid:nkvokw"
+            ]
+        },
+        "nid:rvnd5k": {
+            "node_id": "nid:rvnd5k",
+            "par_id": "nid:ebxirn",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6445227927.272728,
+                    6528106472.727272
+                ],
+                [
+                    -0.928159184570213,
+                    -0.5378339530983239
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6576668672.0
+                ],
+                [
+                    -1.0,
+                    -0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 4,
+            "subnodes": [
+                "nid:ialvti",
+                "nid:ntantg"
+            ],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:acv9rd": {
+            "node_id": "nid:acv9rd",
+            "par_id": "nid:ebxirn",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6457978472.727272,
+                    6566358109.090909
+                ],
+                [
+                    -0.47160433354782627,
+                    -0.05446484378125436
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6576668672.0
+                ],
+                [
+                    -0.5,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:ialvti",
+                "nid:69ek0z"
+            ],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:s5687u": {
+            "node_id": "nid:s5687u",
+            "par_id": "nid:ebxirn",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6579108654.545454,
+                    6687488290.909091
+                ],
+                [
+                    -0.9147553300988593,
+                    -0.5496559008798231
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6710886400.0
+                ],
+                [
+                    -1.0,
+                    -0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:obug5h",
+                "nid:ntantg"
+            ],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:nkvokw": {
+            "node_id": "nid:nkvokw",
+            "par_id": "nid:ebxirn",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6649236654.545454,
+                    6706614109.090909
+                ],
+                [
+                    -0.3320303964657047,
+                    -0.28862321917014844
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6710886400.0
+                ],
+                [
+                    -0.5,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:obug5h",
+                "nid:69ek0z"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:khl9d8": {
+            "node_id": "nid:khl9d8",
+            "par_id": "nid:z7iuqk",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6451603200.0,
+                    6674737745.454545
+                ],
+                [
+                    -1.9005842612433008,
+                    -1.0322430367309077
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6710886400.0
+                ],
+                [
+                    -2.0,
+                    -1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 7,
+            "subnodes": [
+                "nid:h0k5xu",
+                "nid:drb55k"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:mzqsdk",
+                "nid:hl3dvr",
+                "nid:uc616g",
+                "nid:qlf48c"
+            ]
+        },
+        "nid:mzqsdk": {
+            "node_id": "nid:mzqsdk",
+            "par_id": "nid:khl9d8",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6451603200.0,
+                    6547232290.909091
+                ],
+                [
+                    -1.8112787909180463,
+                    -1.5560236776953074
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6576668672.0
+                ],
+                [
+                    -2.0,
+                    -1.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:ialvti",
+                "nid:pvnwcx"
+            ],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:hl3dvr": {
+            "node_id": "nid:hl3dvr",
+            "par_id": "nid:khl9d8",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6521731200.0,
+                    6521731200.0
+                ],
+                [
+                    -1.1304964495022287,
+                    -1.1304964495022287
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6576668672.0
+                ],
+                [
+                    -1.5,
+                    -1.0
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:ialvti",
+                "nid:agxtpg"
+            ],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:uc616g": {
+            "node_id": "nid:uc616g",
+            "par_id": "nid:khl9d8",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6623735563.636363,
+                    6674737745.454545
+                ],
+                [
+                    -1.4859038586477893,
+                    -1.0322430367309077
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6710886400.0
+                ],
+                [
+                    -1.5,
+                    -1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:obug5h",
+                "nid:agxtpg"
+            ],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:qlf48c": {
+            "node_id": "nid:qlf48c",
+            "par_id": "nid:khl9d8",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6630110836.363637,
+                    6642861381.818182
+                ],
+                [
+                    -1.9005842612433008,
+                    -1.7620388850389275
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6710886400.0
+                ],
+                [
+                    -2.0,
+                    -1.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:obug5h",
+                "nid:pvnwcx"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:fhfc9p": {
+            "node_id": "nid:fhfc9p",
+            "par_id": "nid:z7iuqk",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6712989381.818182,
+                    6942499200.0
+                ],
+                [
+                    -0.9975675388380426,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6979321856.0
+                ],
+                [
+                    -1.0,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 13,
+            "subnodes": [
+                "nid:prvzih",
+                "nid:x48gvw"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:76wba5",
+                "nid:yhb1xf",
+                "nid:kwsm66"
+            ]
+        },
+        "nid:76wba5": {
+            "node_id": "nid:76wba5",
+            "par_id": "nid:fhfc9p",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6712989381.818182,
+                    6834119563.636363
+                ],
+                [
+                    -0.35224830592268974,
+                    -0.012849391726734284
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6845104128.0
+                ],
+                [
+                    -0.5,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [
+                "nid:easa23",
+                "nid:69ek0z"
+            ],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:yhb1xf": {
+            "node_id": "nid:yhb1xf",
+            "par_id": "nid:fhfc9p",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6751241018.181818,
+                    6808618472.727272
+                ],
+                [
+                    -0.9975675388380426,
+                    -0.6727847844386332
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6845104128.0
+                ],
+                [
+                    -1.0,
+                    -0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 7,
+            "subnodes": [
+                "nid:easa23",
+                "nid:ntantg"
+            ],
+            "node_type": "leaf",
+            "true_count": 5
+        },
+        "nid:kwsm66": {
+            "node_id": "nid:kwsm66",
+            "par_id": "nid:fhfc9p",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6859620654.545454,
+                    6942499200.0
+                ],
+                [
+                    -0.4238962336007505,
+                    -0.1793796928832663
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6845104128.0,
+                    6979321856.0
+                ],
+                [
+                    -0.5,
+                    0.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 4,
+            "subnodes": [
+                "nid:j1l696",
+                "nid:69ek0z"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:unbjha",
+                "nid:whj1r0",
+                "nid:y8rbhh"
+            ]
+        },
+        "nid:unbjha": {
+            "node_id": "nid:unbjha",
+            "par_id": "nid:kwsm66",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6859620654.545454,
+                    6885121745.454545
+                ],
+                [
+                    -0.4238962336007505,
+                    -0.3824862134144711
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6845104128.0,
+                    6912212992.0
+                ],
+                [
+                    -0.5,
+                    -0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:wj57fz",
+                "nid:sudeod"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:whj1r0": {
+            "node_id": "nid:whj1r0",
+            "par_id": "nid:kwsm66",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6916998109.090909,
+                    6936123927.272728
+                ],
+                [
+                    -0.2616720669923489,
+                    -0.25766375938677644
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6912212992.0,
+                    6979321856.0
+                ],
+                [
+                    -0.5,
+                    -0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:nb14xw",
+                "nid:sudeod"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:y8rbhh": {
+            "node_id": "nid:y8rbhh",
+            "par_id": "nid:kwsm66",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6942499200.0,
+                    6942499200.0
+                ],
+                [
+                    -0.1793796928832663,
+                    -0.1793796928832663
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6912212992.0,
+                    6979321856.0
+                ],
+                [
+                    -0.25,
+                    0.0
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:nb14xw",
+                "nid:tps7yl"
+            ],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:s866rc": {
+            "node_id": "nid:s866rc",
+            "par_id": "nid:z7iuqk",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6897872290.909091,
+                    6929748654.545454
+                ],
+                [
+                    -1.3802108750499156,
+                    -1.3431567303045508
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6979321856.0
+                ],
+                [
+                    -2.0,
+                    -1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:prvzih",
+                "nid:drb55k"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:kj79x3": {
+            "node_id": "nid:kj79x3",
+            "par_id": "nid:rsfvxj",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6508980654.545454,
+                    6891497018.181818
+                ],
+                [
+                    -3.514768119101935,
+                    -2.005556590963453
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6979321856.0
+                ],
+                [
+                    -4.0,
+                    -2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [
+                "nid:lpjwom",
+                "nid:xfp8i3"
+            ],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:m51kon": {
+            "node_id": "nid:m51kon",
+            "par_id": "nid:r827oh",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6483479563.636363,
+                    6923373381.818182
+                ],
+                [
+                    0.04690446151942483,
+                    1.8123546515314615
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    8589934592.0
+                ],
+                [
+                    0.0,
+                    8.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 39,
+            "subnodes": [
+                "nid:qgomrd",
+                "nid:bwpdqr"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:kpqs8i"
+            ]
+        },
+        "nid:kpqs8i": {
+            "node_id": "nid:kpqs8i",
+            "par_id": "nid:m51kon",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6483479563.636363,
+                    6923373381.818182
+                ],
+                [
+                    0.04690446151942483,
+                    1.8123546515314615
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    7516192768.0
+                ],
+                [
+                    0.0,
+                    4.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 38,
+            "subnodes": [
+                "nid:17ikc0",
+                "nid:o2czvp"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:vqa5hd"
+            ]
+        },
+        "nid:vqa5hd": {
+            "node_id": "nid:vqa5hd",
+            "par_id": "nid:kpqs8i",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6483479563.636363,
+                    6923373381.818182
+                ],
+                [
+                    0.04690446151942483,
+                    1.8123546515314615
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6979321856.0
+                ],
+                [
+                    0.0,
+                    2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 39,
+            "subnodes": [
+                "nid:lpjwom",
+                "nid:ouhz1p"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:you19n",
+                "nid:19quqx",
+                "nid:fozgxo",
+                "nid:68rqb6"
+            ]
+        },
+        "nid:you19n": {
+            "node_id": "nid:you19n",
+            "par_id": "nid:vqa5hd",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6483479563.636363,
+                    6693863563.636363
+                ],
+                [
+                    1.0479822246933699,
+                    1.8123546515314615
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6710886400.0
+                ],
+                [
+                    1.0,
+                    2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 5,
+            "subnodes": [
+                "nid:h0k5xu",
+                "nid:cmvz27"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:hqb2jc",
+                "nid:4nuoce",
+                "nid:uo18al"
+            ]
+        },
+        "nid:hqb2jc": {
+            "node_id": "nid:hqb2jc",
+            "par_id": "nid:you19n",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6483479563.636363,
+                    6559982836.363637
+                ],
+                [
+                    1.0893090451046137,
+                    1.4907219169590233
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6576668672.0
+                ],
+                [
+                    1.0,
+                    1.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 5,
+            "subnodes": [
+                "nid:ialvti",
+                "nid:g9dg87"
+            ],
+            "node_type": "leaf",
+            "true_count": 4
+        },
+        "nid:4nuoce": {
+            "node_id": "nid:4nuoce",
+            "par_id": "nid:you19n",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6502605381.818182,
+                    6502605381.818182
+                ],
+                [
+                    1.8123546515314615,
+                    1.8123546515314615
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6576668672.0
+                ],
+                [
+                    1.5,
+                    2.0
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:ialvti",
+                "nid:2n0jx5"
+            ],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:uo18al": {
+            "node_id": "nid:uo18al",
+            "par_id": "nid:you19n",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6655611927.272728,
+                    6693863563.636363
+                ],
+                [
+                    1.0479822246933699,
+                    1.2623221862070568
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6710886400.0
+                ],
+                [
+                    1.0,
+                    1.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:obug5h",
+                "nid:g9dg87"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:19quqx": {
+            "node_id": "nid:19quqx",
+            "par_id": "nid:vqa5hd",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6489854836.363637,
+                    6681113018.181818
+                ],
+                [
+                    0.04690446151942483,
+                    0.8582377853547566
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6710886400.0
+                ],
+                [
+                    0.0,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 12,
+            "subnodes": [
+                "nid:h0k5xu",
+                "nid:lcl0x3"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:78sou3",
+                "nid:s82obd",
+                "nid:n5k92m",
+                "nid:955fad"
+            ]
+        },
+        "nid:78sou3": {
+            "node_id": "nid:78sou3",
+            "par_id": "nid:19quqx",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6489854836.363637,
+                    6553607563.636363
+                ],
+                [
+                    0.1954993352753277,
+                    0.4244124588283147
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6576668672.0
+                ],
+                [
+                    0.0,
+                    0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:ialvti",
+                "nid:pwpfo3"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:s82obd": {
+            "node_id": "nid:s82obd",
+            "par_id": "nid:19quqx",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6515355927.272728,
+                    6572733381.818182
+                ],
+                [
+                    0.6322014141604557,
+                    0.6512093458423532
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6442450944.0,
+                    6576668672.0
+                ],
+                [
+                    0.5,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:ialvti",
+                "nid:k3ytyl"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:n5k92m": {
+            "node_id": "nid:n5k92m",
+            "par_id": "nid:19quqx",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6585483927.272728,
+                    6610985018.181818
+                ],
+                [
+                    0.5211257395089367,
+                    0.8582377853547566
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6710886400.0
+                ],
+                [
+                    0.5,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:obug5h",
+                "nid:k3ytyl"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:955fad": {
+            "node_id": "nid:955fad",
+            "par_id": "nid:19quqx",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6591859200.0,
+                    6681113018.181818
+                ],
+                [
+                    0.04690446151942483,
+                    0.40318568155495604
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6710886400.0
+                ],
+                [
+                    0.0,
+                    0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 4,
+            "subnodes": [
+                "nid:obug5h",
+                "nid:pwpfo3"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:dggylp",
+                "nid:brsw3p",
+                "nid:ha6sk7",
+                "nid:wo8elg"
+            ]
+        },
+        "nid:dggylp": {
+            "node_id": "nid:dggylp",
+            "par_id": "nid:955fad",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6591859200.0,
+                    6617360290.909091
+                ],
+                [
+                    0.09433428997619214,
+                    0.10834954876317913
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6643777536.0
+                ],
+                [
+                    0.0,
+                    0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:jk06xv",
+                "nid:0n6qq3"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:brsw3p": {
+            "node_id": "nid:brsw3p",
+            "par_id": "nid:955fad",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6598234472.727272,
+                    6598234472.727272
+                ],
+                [
+                    0.26166847688739403,
+                    0.26166847688739403
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6576668672.0,
+                    6643777536.0
+                ],
+                [
+                    0.25,
+                    0.5
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:jk06xv",
+                "nid:id8t3z"
+            ],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:ha6sk7": {
+            "node_id": "nid:ha6sk7",
+            "par_id": "nid:955fad",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6661987200.0,
+                    6668362472.727272
+                ],
+                [
+                    0.04690446151942483,
+                    0.24995754081903795
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6643777536.0,
+                    6710886400.0
+                ],
+                [
+                    0.0,
+                    0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:g2gwdo",
+                "nid:0n6qq3"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:wo8elg": {
+            "node_id": "nid:wo8elg",
+            "par_id": "nid:955fad",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6681113018.181818,
+                    6681113018.181818
+                ],
+                [
+                    0.40318568155495604,
+                    0.40318568155495604
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6643777536.0,
+                    6710886400.0
+                ],
+                [
+                    0.25,
+                    0.5
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:g2gwdo",
+                "nid:id8t3z"
+            ],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:fozgxo": {
+            "node_id": "nid:fozgxo",
+            "par_id": "nid:vqa5hd",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6732115200.0,
+                    6923373381.818182
+                ],
+                [
+                    0.0503707161894736,
+                    0.9137058074169033
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6979321856.0
+                ],
+                [
+                    0.0,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 16,
+            "subnodes": [
+                "nid:prvzih",
+                "nid:lcl0x3"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:b391nu",
+                "nid:ifg7oj",
+                "nid:0l7s5m",
+                "nid:ioe7ne"
+            ]
+        },
+        "nid:b391nu": {
+            "node_id": "nid:b391nu",
+            "par_id": "nid:fozgxo",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6732115200.0,
+                    6821369018.181818
+                ],
+                [
+                    0.09011279098380783,
+                    0.4927593914157971
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6845104128.0
+                ],
+                [
+                    0.0,
+                    0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": true,
+            "noisy_count": 8,
+            "subnodes": [
+                "nid:easa23",
+                "nid:pwpfo3"
+            ],
+            "node_type": "branch",
+            "children": [
+                "nid:iptbeb",
+                "nid:cvynka",
+                "nid:cahr7u",
+                "nid:rbvhqx"
+            ]
+        },
+        "nid:iptbeb": {
+            "node_id": "nid:iptbeb",
+            "par_id": "nid:b391nu",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6732115200.0,
+                    6757616290.909091
+                ],
+                [
+                    0.3923080556558746,
+                    0.4927593914157971
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6777995264.0
+                ],
+                [
+                    0.25,
+                    0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:oaqaf6",
+                "nid:id8t3z"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:cvynka": {
+            "node_id": "nid:cvynka",
+            "par_id": "nid:b391nu",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6738490472.727272,
+                    6763991563.636363
+                ],
+                [
+                    0.09011279098380783,
+                    0.24163480655494102
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6777995264.0
+                ],
+                [
+                    0.0,
+                    0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:oaqaf6",
+                "nid:0n6qq3"
+            ],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:cahr7u": {
+            "node_id": "nid:cahr7u",
+            "par_id": "nid:b391nu",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6783117381.818182,
+                    6814993745.454545
+                ],
+                [
+                    0.13332449749778202,
+                    0.2070755740546079
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6777995264.0,
+                    6845104128.0
+                ],
+                [
+                    0.0,
+                    0.25
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:7vckr5",
+                "nid:0n6qq3"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:rbvhqx": {
+            "node_id": "nid:rbvhqx",
+            "par_id": "nid:b391nu",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6821369018.181818,
+                    6821369018.181818
+                ],
+                [
+                    0.4268960203372312,
+                    0.4268960203372312
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6777995264.0,
+                    6845104128.0
+                ],
+                [
+                    0.25,
+                    0.5
+                ]
+            ],
+            "singularity": true,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:7vckr5",
+                "nid:id8t3z"
+            ],
+            "node_type": "leaf",
+            "true_count": 1
+        },
+        "nid:ifg7oj": {
+            "node_id": "nid:ifg7oj",
+            "par_id": "nid:fozgxo",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6789492654.545454,
+                    6840494836.363637
+                ],
+                [
+                    0.5234630271892817,
+                    0.9137058074169033
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6845104128.0
+                ],
+                [
+                    0.5,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:easa23",
+                "nid:k3ytyl"
+            ],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:0l7s5m": {
+            "node_id": "nid:0l7s5m",
+            "par_id": "nid:fozgxo",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6846870109.090909,
+                    6865995927.272728
+                ],
+                [
+                    0.5219877296053974,
+                    0.691661918369825
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6845104128.0,
+                    6979321856.0
+                ],
+                [
+                    0.5,
+                    1.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:j1l696",
+                "nid:k3ytyl"
+            ],
+            "node_type": "leaf",
+            "true_count": 2
+        },
+        "nid:ioe7ne": {
+            "node_id": "nid:ioe7ne",
+            "par_id": "nid:fozgxo",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6872371200.0,
+                    6923373381.818182
+                ],
+                [
+                    0.0503707161894736,
+                    0.3538850114752165
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6845104128.0,
+                    6979321856.0
+                ],
+                [
+                    0.0,
+                    0.5
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:j1l696",
+                "nid:pwpfo3"
+            ],
+            "node_type": "leaf",
+            "true_count": 3
+        },
+        "nid:68rqb6": {
+            "node_id": "nid:68rqb6",
+            "par_id": "nid:vqa5hd",
+            "columns": [
+                "datetime",
+                "float"
+            ],
+            "combination": [
+                0,
+                1
+            ],
+            "actual_intervals": [
+                [
+                    6853245381.818182,
+                    6904247563.636363
+                ],
+                [
+                    1.0475853374178141,
+                    1.425506126612747
+                ]
+            ],
+            "snapped_intervals": [
+                [
+                    6710886400.0,
+                    6979321856.0
+                ],
+                [
+                    1.0,
+                    2.0
+                ]
+            ],
+            "singularity": false,
+            "over_threshold": false,
+            "noisy_count": 3,
+            "subnodes": [
+                "nid:prvzih",
+                "nid:cmvz27"
+            ],
+            "node_type": "leaf",
+            "true_count": 3
+        }
+    },
+    "cluster_info": [
+        {
+            "cluster_id": [
+                0,
+                1
+            ],
+            "cluster_name": [
+                "datetime",
+                "float"
+            ],
+            "type": "initial"
+        }
+    ]
+}

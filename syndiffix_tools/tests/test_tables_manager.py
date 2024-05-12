@@ -2,8 +2,8 @@ import json
 import os
 from pathlib import Path
 
-from common_tasks import *
 from tables_manager import TablesManager
+from common_tasks import *
 
 from helpers import *
 

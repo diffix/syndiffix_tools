@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
 
-from common_tasks import *
-from tables_manager import TablesManager
+from syndiffix_tools.common_tasks import *
+from syndiffix_tools.tables_manager import TablesManager
 from tests.helpers import *
 import shutil
 

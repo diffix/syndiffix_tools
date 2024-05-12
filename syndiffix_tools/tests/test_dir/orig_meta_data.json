@@ -1,0 +1,37 @@
+{
+    "pid_cols": [
+        "pid"
+    ],
+    "num_rows": 100,
+    "num_cols": 5,
+    "num_distinct_per_column": {
+        "str5": 5,
+        "int10": 10,
+        "float": 100,
+        "datetime": 100,
+        "pid": 100
+    },
+    "orig_file_name": "test_file.parquet",
+    "columns": [
+        "str5",
+        "int10",
+        "float",
+        "datetime",
+        "pid"
+    ],
+    "column_dtypes": {
+        "str5": "object",
+        "int10": "int32",
+        "float": "float64",
+        "datetime": "datetime64[ns]",
+        "pid": "int64"
+    },
+    "column_classes": {
+        "str5": "categorical",
+        "int10": "categorical",
+        "float": "continuous",
+        "datetime": "continuous",
+        "pid": "continuous"
+    },
+    "orig_file_name_csv": "test_file.parquet.csv"
+}
