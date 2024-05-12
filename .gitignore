@@ -162,3 +162,4 @@ cython_debug/
 .flake8
 _local_test*
 tests/test_dir/
+examples/tests/test_dir/

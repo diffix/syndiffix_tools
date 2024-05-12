@@ -1,4 +1,4 @@
-from common_tasks import *
+from syndiffix_tools.common_tasks import *
 
 
 def test_python_version():

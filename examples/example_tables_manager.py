@@ -3,8 +3,8 @@ from pathlib import Path
 
 from syndiffix_tools.common_tasks import *
 from syndiffix_tools.tables_manager import TablesManager
-from tests.helpers import *
 import shutil
+import numpy as np
 
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
@@ -13,6 +13,19 @@ pp = pprint.PrettyPrinter(indent=4)
 Demonstrates usage of TablesManager to manage storage and naming of
 synthetic data files
 """
+def get_generic_dataframe():
+    np.random.seed(0)
+    n = 100
+    df = pd.DataFrame(
+        {
+            "str5": np.random.choice(list("abcde"), n),
+            "int10": np.random.randint(1, 11, n),
+            "float": np.random.randn(n),
+            "datetime": pd.date_range("2000-01-01", "2020-01-01", periods=n),
+        }
+    )
+    df["pid"] = df.index
+    return df
 
 # Make a dataframe
 df = get_generic_dataframe()

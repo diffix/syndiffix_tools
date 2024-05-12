@@ -2,8 +2,8 @@ import json
 import os
 from pathlib import Path
 
-from tables_manager import TablesManager
-from common_tasks import *
+from syndiffix_tools.tables_manager import TablesManager
+from syndiffix_tools.common_tasks import *
 
 from helpers import *
 
