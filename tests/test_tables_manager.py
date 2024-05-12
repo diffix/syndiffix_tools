@@ -7,7 +7,6 @@ from common_tasks import *
 
 from helpers import *
 
-
 def test_input_new_df_orig():
     df = get_generic_dataframe()
     test_path = Path("tests/test_dir")
