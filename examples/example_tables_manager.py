@@ -59,13 +59,13 @@ tm.set_pid_cols(["pid"])
 
 # Make a synthetic table with the following two columns.
 # Various statistics about the synthesis internals are also saved in a separate file.
-tm.synthesize(columns=["datetime", "str5"], also_save_stats=True)
+tm.synthesize(columns=["datetime", "str5"], save_stats="max")
 
 # Create synthetic table with all columns
-tm.synthesize(also_save_stats=True)
+tm.synthesize(save_stats="max")
 
 # Create one more synthetic table for fun
-tm.synthesize(columns=["datetime", "float"], also_save_stats=True)
+tm.synthesize(columns=["datetime", "float"], save_stats="max")
 
 # We can check to see if a synthetic table with certain columns exists
 if not tm.syn_file_exists(columns=["str5", "datetime"]):
