@@ -120,20 +120,26 @@ class TablesManager:
         else:
             return None
 
-    def save_sdx_stats(
+    def _save_sdx_stats(
         self,
         syn: Synthesizer,
         stats_file_path: Path,
         columns: list,
         elapsed_time: float,
+        save_stats: str,
     ) -> None:
+        if save_stats == 'none':
+            return
         saver = {
             "columns": columns,
             "elapsed_time": elapsed_time,
             "orig_file_name": self.orig_file_name,
+            "forest_nodes": None,
+            "cluster_info": None,
         }
-        tw = TreeWalker(syn)
-        saver["forest_nodes"] = tw.get_forest_nodes()
+        if save_stats == 'max':
+            tw = TreeWalker(syn)
+            saver["forest_nodes"] = tw.get_forest_nodes()
         ci = ClusterInfo(syn)
         saver["cluster_info"] = ci.get_cluster_info()
         with stats_file_path.open("w") as file:
@@ -155,8 +161,23 @@ class TablesManager:
             return None
 
     def synthesize(
-        self, columns: list = None, also_save_stats: bool = False, force: bool = False
+        self, 
+        columns: list = None, 
+        save_stats: str = 'min', 
+        force: bool = False,
+        also_save_stats: bool = None,     # deprecated
     ) -> None:
+        ''' columns: list of column names to synthesize. If None, all
+               columns are synthesized.
+            save_stats: 'min', 'max', or 'none'. 'max' can be quite large.
+            force: if True, synthesize even if the file already exists.
+        '''
+        # also_save_stats is deprecated
+        if also_save_stats is not None:
+            if also_save_stats is True:
+                save_stats = 'max'
+            else:
+                save_stats = 'none'
         if columns is None:
             columns = list(self.df_orig.columns)
         # remove pid columns
@@ -179,7 +200,7 @@ class TablesManager:
         # The catalog would be out of date after this, so we just delete it
         # and rebuild it when needed
         self.catalog = None
-        if also_save_stats:
+        if save_stats != 'none':
             stats_file_path = Path(self.stats_dir_path, "stats_" + data_file_name + ".json")
-            self.save_sdx_stats(syn, stats_file_path, columns, elapsed_time)
+            self._save_sdx_stats(syn, stats_file_path, columns, elapsed_time, save_stats)
             pass
