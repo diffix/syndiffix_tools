@@ -55,7 +55,7 @@ def best_guess_column_classification(df: pd.DataFrame) -> dict:
     return col_types
 
 
-def make_data_file_name(table: str, columns: list[str]) -> str:
+def make_data_file_name(table: str, columns: list[str], target: str = None) -> str:
     if table[-8:] == ".parquet":
         table = table[:-8]
     elif table[-4:] == ".csv":
@@ -70,8 +70,14 @@ def make_data_file_name(table: str, columns: list[str]) -> str:
             name += col[:chars_per_col] + "_"
         # strip off the last underscore
         name = name[:-1]
-    # set a seed value to be the concatination of table and all the columns
-    seed = table + "__".join(columns)
+    if target is not None:
+        target = target.replace(" ", "_")
+        if len(target) > 12:
+            target = target[:5] + '_' + target[-5:]
+        name += f".TAR.{target}"
+        seed = table + "__".join(columns+ [target])
+    else:
+        seed = table + "__".join(columns)
     random.seed(seed)
     # append random alphanumeric characters
     name += "." + "".join(random.choices(string.ascii_lowercase + string.digits, k=6))

@@ -127,11 +127,13 @@ class TablesManager:
         columns: list,
         elapsed_time: float,
         save_stats: str,
+        target_column: str = None,
     ) -> None:
         if save_stats == 'none':
             return
         saver = {
             "columns": columns,
+            "target_column": target_column,
             "elapsed_time": elapsed_time,
             "orig_file_name": self.orig_file_name,
             "forest_nodes": None,
@@ -145,15 +147,15 @@ class TablesManager:
         with stats_file_path.open("w") as file:
             json.dump(saver, file, indent=4)
 
-    def syn_file_exists(self, columns: list, do_load: bool = False) -> bool:
-        data_file_name = make_data_file_name(self.orig_file_name, columns)
+    def syn_file_exists(self, columns: list, target_column: str = None) -> bool:
+        data_file_name = make_data_file_name(self.orig_file_name, columns, target=target_column)
         file_path = Path(self.syn_dir_path, data_file_name + ".parquet")
         return file_path.exists()
 
-    def get_syn_df(self, columns: list = None) -> Optional[pd.DataFrame]:
+    def get_syn_df(self, columns: list = None, target_column: str = None) -> Optional[pd.DataFrame]:
         if columns is None:
             columns = list(self.df_orig.columns)
-        data_file_name = make_data_file_name(self.orig_file_name, columns)
+        data_file_name = make_data_file_name(self.orig_file_name, columns, target=target_column)
         file_path = Path(self.syn_dir_path, data_file_name + ".parquet")
         if file_path.exists():
             return pd.read_parquet(file_path)
@@ -163,12 +165,14 @@ class TablesManager:
     def synthesize(
         self, 
         columns: list = None, 
+        target_column: str = None,
         save_stats: str = 'min', 
         force: bool = False,
         also_save_stats: bool = None,     # deprecated
     ) -> None:
         ''' columns: list of column names to synthesize. If None, all
                columns are synthesized.
+            target_column: use as the ML target column
             save_stats: 'min', 'max', or 'none'. 'max' can be quite large.
             force: if True, synthesize even if the file already exists.
         '''
@@ -183,7 +187,7 @@ class TablesManager:
         # remove pid columns
         columns = [col for col in columns if col not in self.orig_meta_data["pid_cols"]]
         columns.sort()
-        data_file_name = make_data_file_name(self.orig_file_name, columns)
+        data_file_name = make_data_file_name(self.orig_file_name, columns, target=target_column)
         data_file_path = Path(self.syn_dir_path, data_file_name + ".parquet")
         if data_file_path.exists() and not force:
             return
@@ -193,7 +197,7 @@ class TablesManager:
             df_pid = None
         # record start of elapsed time
         start_time = time.time()
-        syn = Synthesizer(self.df_orig[columns], pids=df_pid)
+        syn = Synthesizer(self.df_orig[columns], pids=df_pid, target_column=target_column)
         df_syn = syn.sample()
         elapsed_time = time.time() - start_time
         put_pq_from_df(data_file_path, df_syn)
@@ -202,5 +206,4 @@ class TablesManager:
         self.catalog = None
         if save_stats != 'none':
             stats_file_path = Path(self.stats_dir_path, "stats_" + data_file_name + ".json")
-            self._save_sdx_stats(syn, stats_file_path, columns, elapsed_time, save_stats)
-            pass
+            self._save_sdx_stats(syn, stats_file_path, columns, elapsed_time, save_stats, target_column=target_column)
