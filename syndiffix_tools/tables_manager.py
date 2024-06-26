@@ -120,6 +120,23 @@ class TablesManager:
         else:
             return None
 
+    def _build_meta_data(self,
+                         syn: Synthesizer,
+                         df_syn: pd.DataFrame,
+                         elapsed_time: float,
+                         target_column: str = None,
+                         ) -> dict:
+        meta_data = {
+            "columns": list(df_syn.columns),
+            "rows": df_syn.shape[0],
+            "target_column": target_column,
+            "elapsed_time": elapsed_time,
+            "cluster_info": None,
+        }
+        ci = ClusterInfo(syn)
+        meta_data["cluster_info"] = ci.get_cluster_info()
+        return meta_data
+
     def _save_sdx_stats(
         self,
         syn: Synthesizer,
@@ -139,11 +156,11 @@ class TablesManager:
             "forest_nodes": None,
             "cluster_info": None,
         }
+        ci = ClusterInfo(syn)
+        saver["cluster_info"] = ci.get_cluster_info()
         if save_stats == 'max':
             tw = TreeWalker(syn)
             saver["forest_nodes"] = tw.get_forest_nodes()
-        ci = ClusterInfo(syn)
-        saver["cluster_info"] = ci.get_cluster_info()
         with stats_file_path.open("w") as file:
             json.dump(saver, file, indent=4)
 
@@ -201,6 +218,10 @@ class TablesManager:
         df_syn = syn.sample()
         elapsed_time = time.time() - start_time
         put_pq_from_df(data_file_path, df_syn)
+        meta_data = self._build_meta_data(syn, df_syn, elapsed_time, target_column=target_column)
+        meta_data_path = Path(self.syn_dir_path, data_file_name + ".meta_data.json")
+        with meta_data_path.open("w") as file:
+            json.dump(meta_data, file, indent=4)
         # The catalog would be out of date after this, so we just delete it
         # and rebuild it when needed
         self.catalog = None
